@@ -57,3 +57,31 @@ h2 {
 .project-card:hover {
   transform: translateY(-4px);
 }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: bold;
+}
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-family: inherent;
+  font-size: 1rem;
+}
+button {
+  background-color: var(--accent);
+  color: #1e1e2f;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+button:hover {
+  opacity: 0.85;
+}
