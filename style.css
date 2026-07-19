@@ -48,3 +48,12 @@ h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.project-card {
+  background-color: #2a2a40;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid var(--accent);
+}
+.project-card:hover {
+  transform: translateY(-4px);
+}
