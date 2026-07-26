@@ -10,6 +10,12 @@ const projects =[
     description: "My first website - rebuild a site faster with less hand holding.",
     link:
     "https://github.com/emmanotis777/web-journey"
+},
+{
+    title: "Calender schedule",
+    description: "My first website - A 12 weeks full course training.",
+    link:
+     "https://github.com/emmanotis777/web-journey"
 }
 ]; 
 const projectsContainer = document.getElementById("projects-container");
