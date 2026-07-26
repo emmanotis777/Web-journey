@@ -29,9 +29,18 @@ projects.forEach(function(project)
     <a href="${project.link}" target="_blank">View Project on Github</a>`;
     projectsContainer.appendChild(projectElement)
 });
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+}
 const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click",function() {
     document.body.classList.toggle("light-mode");
+    if
+    (document.body.classList.contains("light-mode")) {
+        localStorage.setItem("theme", "light");
+    } else {
+        localStorage.setItem("theme", "dark");
+    }
 });
 const form = document.querySelector("form");
 const formMessage = document.getElementById("form-message");
