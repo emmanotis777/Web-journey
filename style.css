@@ -85,3 +85,5 @@ button {
 button:hover {
   opacity: 0.85;
 }
+body.light-mode {background-color: #f4f1ea; color: #1e1e2f}
+body.light-mode .project-card {background-color: #ffffff;}
