@@ -58,3 +58,24 @@ email.trim() === "") {
     form.reset();
 }
 });
+const quoteText =
+document.getElementById("quote-text");
+const newQuoteBtn =
+document.getElementById("new-quote-btn")
+function getQuote() {
+    fetch("https://dummyjson.com/quotes/random")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data){
+        quoteText.textContent
+        = data.quote;
+    })
+    .catch(function(error){
+        quoteText.textContent
+        = "Couldn`t load a quote right now.";
+    });
+}
+newQuoteBtn.addEventListener("click",
+ getQuote);
+getQuote()
